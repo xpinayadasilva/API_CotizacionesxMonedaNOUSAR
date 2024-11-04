@@ -3,35 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Desafio API Tipos de Cambio</title>
+    <title>Lista de tareas pendientes</title>
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/estilos.css" />    
   </head>
   <body>    
+    <div id="wrapper">
       <header>
-        <hr>
-        <h1>Conversor de monedas nacional</h1>
-        <hr> 
+          <div id="page-title">
+            <h2 class="title">To Do List</h2>
+            <hr>            
+          </div>
       </header>
-      <div class="main-container">
-        <p>Pesos CLP</p>
-        <input type="number" name="montoCLP" id="montoCLP" class="form-control text-bg-light" placeholder="Ingrese el monto en CLP" min="0" required autofocus />
-        <p>Moneda a convertir:</p>
-        <select name="tipoMoneda" id="tipoMoneda" class="form-select text-bg-light"></select>
-        <button id="btnBuscar" class="btn btn-info my-4">Buscar</button>
-        <p id="resultado" class="fs-4"></p>               
-      </div>
-      <div class="chart">
-        <h2>Historial de cotizaciones de los ultimos 10 dias</h2>
-        <div>
-        <canvas id="myChart"></canvas>
+        <div > 
+          <ul id="todo-list">              
+          </ul>
+        </div>
+        <div id="add-todo">
+            <input type="text" id="toDoDescription" placeholder="Introduzca una nueva tarea">
+            <span> <button onclick="addLI()">Agregar</button></span>            
         </div>
 
-      </div>
-    
+
+    </div>
     <!-- script.js -->
     <script src="./assets/js/script.js"></script>
-    <!-- script de chart-->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </body>
 </html>
