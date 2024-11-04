@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio API Tipos de Cambio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css" />    
+  </head>
+  <body>    
+      <header>
+        <hr>
+        <h1>Conversor de monedas nacional</h1>
+        <hr> 
+      </header>
+      <div class="main-container">
+        <p>Pesos CLP</p>
+        <input type="number" name="montoCLP" id="montoCLP" class="form-control text-bg-light" placeholder="Ingrese el monto en CLP" min="0" required autofocus />
+        <p>Moneda a convertir:</p>
+        <select name="tipoMoneda" id="tipoMoneda" class="form-select text-bg-light"></select>
+        <button id="btnBuscar" class="btn btn-info my-4">Buscar</button>
+        <p id="resultado" class="fs-4"></p>               
+      </div>
+      <div class="chart">
+        <h2>Historial de cotizaciones de los ultimos 10 dias</h2>
+        <div>
+        <canvas id="myChart"></canvas>
+        </div>
+
+      </div>
+    
+    <!-- script.js -->
+    <script src="./assets/js/script.js"></script>
+    <!-- script de chart-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>

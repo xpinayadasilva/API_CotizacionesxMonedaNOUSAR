@@ -1,0 +1,60 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;          
+}
+body{
+    background-color: black;
+}  
+header{ 
+    font-weight: bold;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    padding: 0px 40px;
+    color: white;
+}
+line{
+    color:aqua;    
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    
+    color: white;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-weight: normal;
+    background-color: dimgrey;
+}
+input,
+select {
+  width: 250px;
+}
+button{
+    margin-top: 10px;
+    background-color: aqua;
+    width: 100px;
+    height: 30px;
+    color:white;
+    border-radius: 5%;
+    border: none;
+    text-shadow: 2px;
+}
+#resultado{
+    font-weight: bold;
+}
+#myChart{
+    background-Color: white;
+}
+chart{
+    color:white;
+    height: 300px;
+    width: 400px;
+    align-items: center;
+}
